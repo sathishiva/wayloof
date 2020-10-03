@@ -1,0 +1,24 @@
+
+#dependencies
+/node_modules
+
+#product
+/build
+
+#testing
+/coverage
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.DS_Store
+/*/.DS_Store
+
+.vscode
+
+#sub folders
+/**/Output/
+
+#IDE
+.idea

@@ -6,10 +6,15 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "firstname": "Senthil",
-    "lastname": "G",
-    "age": 34
-}
+    "first_name": "John",
+    "last_name": "Doe",
+    "dob": "01/03/1999",
+    "email": "join.doe@abc.com",
+    "mobile": 9001234567,
+    "zip_code": 123456,
+    "city_id": 1,
+    "user_trust_score_id": 1
+  }
 ###
 GET http://localhost:5000/users/5f6d4df76d36ee596e6fad2f
 
@@ -19,7 +24,6 @@ DELETE  http://localhost:5000/users/5f6d588852e923678b9f3437
 ###
 PATCH  http://localhost:5000/users/5f782bfb4852457570a6c8e0
 Content-Type: application/json
-
 {
     "lastname": "Gunasekaran"
 }

@@ -74,12 +74,15 @@ export const deleteUser = async (req, res) => {
 
 export const updateUser = async (req, res) => {
   const { id } = req.params;
-  const { firstname, lastname, age } = req.body;
+  const { first_name, last_name, dob, email, mobile, zip_code } = req.body;
   //   const foundUser = users.find((user) => user.id === id);
   const foundUser = await Users.findById(id);
-  if (firstname) foundUser.firstname = firstname;
-  if (lastname) foundUser.lastname = lastname;
-  if (age) foundUser.age = age;
+  if (first_name) foundUser.first_name = first_name;
+  if (last_name) foundUser.last_name = last_name;
+  if (dob) foundUser.dob = dob;
+  if (email) foundUser.email = email;
+  if (mobile) foundUser.mobile = mobile;
+  if (zip_code) foundUser.zip_code = zip_code;
 
   try {
     const updatedUser = await foundUser.save();

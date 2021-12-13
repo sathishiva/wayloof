@@ -22,8 +22,9 @@ GET http://localhost:5000/users/5f6d4df76d36ee596e6fad2f
 DELETE  http://localhost:5000/users/5f6d588852e923678b9f3437
 
 ###
-PATCH  http://localhost:5000/users/5f782bfb4852457570a6c8e0
-Content-Type: application/json
+PATCH http://localhost:5000/users/61b6356454f499270755aee9
+content-type: application/json
+
 {
-    "lastname": "Gunasekaran"
+  "first_name": "Senthilkumar"
 }
